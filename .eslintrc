@@ -1,0 +1,66 @@
+{
+  "extends": ["airbnb"],
+  "parser": "babel-eslint",
+  "plugins": ["jest"],
+  "env": {
+    "jest": true,
+    "browser": true
+  },
+  "settings": {
+    "import/core-modules": ["react"],
+    "import/resolver": {
+      "node": {
+        "paths": ["./app/src"]
+      }
+    }
+  },
+  "rules": {
+    "template-curly-spacing": "off",
+    "indent": ["off"],
+    "import/no-mutable-exports": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "import/prefer-default-export": "off",
+    "import/named": "error",
+    "import/no-cycle": "error",
+    "import/order": "off",
+    "react/jsx-no-target-blank": "error",
+    "react/button-has-type": "off",
+    "react/no-children-prop": "error",
+    "react/no-access-state-in-setstate": "error",
+    "react/forbid-prop-types": "off",
+    "react/destructuring-assignment": "error",
+    "react/jsx-one-expression-per-line": "off",
+    "no-restricted-globals": "error",
+    "no-redeclare": "error",
+    "no-plusplus": "error",
+    "no-continue": "warn",
+    "no-case-declarations": "error",
+    "no-use-before-define": "warn",
+    "no-useless-escape": "warn",
+    "no-undef": "error",
+    "no-shadow": "error",
+    "no-param-reassign": "error",
+    "no-unused-vars": "error",
+    "no-return-await": "off",
+    "no-console": "warn",
+    "no-underscore-dangle": "off",
+    "arrow-parens": ["error", "always"],
+    "class-methods-use-this": "error",
+    "comma-dangle": "off",
+    "consistent-return": "off",
+    "default-case": "error",
+    "global-require": "warn",
+    "one-var": "off",
+    "one-var-declaration-per-line": "off",
+    "prefer-const": "error",
+    "implicit-arrow-linebreak": "off",
+    "require-yield": "error",
+    "operator-linebreak": "off",
+    "react/sort-comp": "off",
+    "object-curly-newline": "off",
+    "radix": "off",
+    "max-len": "error",
+    "semi": ["error", "never"]
+  }
+}

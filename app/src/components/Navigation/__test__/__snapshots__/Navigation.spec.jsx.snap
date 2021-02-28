@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navigation/> should render Navigation correctly 1`] = `
+<div
+  className="sc-AxjAm hlLNoe"
+>
+  <div
+    className="TDS_Box-modules__betweenBottomMargin-4___2tJ2n TDS_Box-modules__stack___33m4D"
+  >
+    <div
+      className="sc-AxirZ hRPEQs"
+    >
+      <svg>
+        telusLogo.svg
+      </svg>
+    </div>
+    <div
+      className="TDS_Box-modules__betweenBottomMargin-3___1jBrz TDS_Box-modules__stack___33m4D"
+    >
+      <a
+        aria-current="page"
+        className="selected"
+        href="/"
+        onClick={[Function]}
+        style={Object {}}
+      >
+        Dashboard
+      </a>
+      <a
+        aria-current={null}
+        href="/routes"
+        onClick={[Function]}
+      >
+        Routes
+      </a>
+      <a
+        aria-current={null}
+        href="/proactive"
+        onClick={[Function]}
+      >
+        Proactive
+      </a>
+      <a
+        aria-current={null}
+        href="/fifa"
+        onClick={[Function]}
+      >
+        FIFA
+      </a>
+      <a
+        aria-current={null}
+        href="/utils"
+        onClick={[Function]}
+      >
+        Utils
+      </a>
+    </div>
+  </div>
+</div>
+`;
