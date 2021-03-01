@@ -3,12 +3,12 @@ import { any } from 'prop-types'
 import { Router, Route } from 'react-router-dom'
 import { Layout } from 'antd'
 
-import Navigation from 'components/Navigation/index'
-import * as routes from 'constants/routes'
 import { createHistory as history } from 'utils'
-import HomePage from './Home'
+import * as routes from 'constants/routes'
 import { SIDEBAR_WIDTH } from 'constants/styles'
+import Navigation from 'components/Navigation/index'
 import NavBar from 'components/NavBar'
+import HomePage from './Home'
 
 const { Content, Header, Sider } = Layout
 
