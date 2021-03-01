@@ -4,7 +4,7 @@ import { Col, Row } from 'antd'
 
 import ListAuth from './ListAuth'
 import List from './List'
-import { ReactComponent as TelusLogo } from 'assets/telusLogo.svg'
+import { ReactComponent as Logo } from 'assets/logo.svg'
 import * as styles from './styles'
 
 const Navigation = ({ session }) => (
@@ -12,7 +12,7 @@ const Navigation = ({ session }) => (
     <Row>
       <Col>
         <styles.SideHeader>
-          <TelusLogo />
+          <Logo />
         </styles.SideHeader>
         <List />
         {session?.me && <ListAuth session={session} />}

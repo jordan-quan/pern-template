@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
 
-import { ReactComponent as TelusLogo } from 'assets/telusLogo.svg'
+import { ReactComponent as Logo } from 'assets/logo.svg'
 import { useAuthToken } from 'utils'
 import * as styles from './styles'
 
 const Auth = () => {
-  const [user, setUser] = useState({})
   const [token, setToken] = useAuthToken()
   const [isDisabled, setIsDisabled] = useState(false)
-  const { name, photo } = user
   let popup
 
   const checkPopup = () => {
@@ -57,10 +55,7 @@ const Auth = () => {
   return (
     <styles.Container>
       <styles.Header>
-        <TelusLogo />
-        <styles.Title>
-          <h2>Chat Admin</h2>
-        </styles.Title>
+        <Logo />
       </styles.Header>
 
       <styles.Button onClick={startAuth}>Login with Google</styles.Button>
