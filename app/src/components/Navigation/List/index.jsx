@@ -1,21 +1,34 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Col, Row } from 'antd'
+import { Menu } from 'antd'
 
 import * as routes from 'constants/routes'
+
+const { SubMenu } = Menu;
+
 
 /**
  * Basic link list
  */
 const List = () => (
-  <Row>
-    <Col>
-      <NavLink to={routes.HOME} activeClassName="selected">
-        HOME
-      </NavLink>
+  <Menu
+    style={{ width: '100%' }}
+    defaultSelectedKeys={['1']}
+    defaultOpenKeys={['sub1']}
+    mode="inline"
+  >
+    <SubMenu key="sub1" title="Navigation One">
 
-    </Col>
-  </Row>
+      <Menu.Item key="1">
+        {/* <NavLink to={routes.HOME}> */}
+          HOME
+        {/* </NavLink> */}
+      </Menu.Item>
+      <Menu.Item key="2">Option 2</Menu.Item>
+
+    </SubMenu>
+
+  </Menu>
 )
 
 export default List
