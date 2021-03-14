@@ -1,1 +1,1 @@
-export * from './hours'
+export * from './example'

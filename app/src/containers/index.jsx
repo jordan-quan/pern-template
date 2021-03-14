@@ -5,10 +5,10 @@ import { Layout } from 'antd'
 
 import { createHistory as history } from 'utils'
 import * as routes from 'constants/routes'
-import { SIDEBAR_WIDTH } from 'constants/styles'
 import Navigation from 'components/Navigation/index'
 import NavBar from 'components/NavBar'
 import HomePage from './Home'
+import * as styles from './styles'
 
 const { Content, Header, Sider } = Layout
 
@@ -19,17 +19,11 @@ const Container = ({ session }) => (
         <NavBar />
       </Header>
       <Layout>
-        <Sider style={{
-          overflow: 'auto',
-          height: '100%',
-          position: 'fixed',
-          left: 0,
-          width: SIDEBAR_WIDTH
-        }} >
+        <Sider style={styles.Sider} >
           <Navigation session={session} />
         </Sider>
 
-        <Layout style={{ marginLeft: SIDEBAR_WIDTH }}>
+        <Layout style={styles.Layout}>
           <Content>
             <Route exact path={routes.HOME} component={HomePage} />
           </Content>
